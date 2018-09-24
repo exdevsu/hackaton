@@ -8,7 +8,7 @@
         <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar blue navbar-map">
             <!-- Breadcrumb-->
             <div class="breadcrumb-dn mr-auto">
-                <a class="navbar-brand h3-responsive white-text" href="{{ route('map') }}">NaviMerch</a>
+                <a class="navbar-brand h3-responsive white-text" href="{{ route('index') }}">NaviMerch</a>
             </div>
 
             <!--Navbar links-->
