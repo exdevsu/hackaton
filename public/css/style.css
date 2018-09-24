@@ -63,3 +63,11 @@ h6 {
     background: url('/img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
 }
+
+#map-container-4 {
+    height: 100vh;
+}
+
+.navbar-map {
+    background: #42a5f5c4 !important;
+}

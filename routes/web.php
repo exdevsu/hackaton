@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+
+// Route::middleware('auth')->group(function () {
+    Route::get('/map', ['as' => 'map', 'uses' => 'MapController@index']);
+// });
 
 Auth::routes();
