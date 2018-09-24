@@ -62,7 +62,9 @@
                         <!--Grid column-->
                         <div class="col-md-12 col-xl-5 mb-4 center">
                             <!--Form with header-->
-                            <div class="card animated fadeInUp">
+                            <form class="card animated fadeInUp" method="POST" action="{{ route('login') }}">
+                                @csrf
+
                                 <div class="card-body">
                                     <!--Header-->
                                     <div class="form-header blue-gradient">
@@ -71,16 +73,28 @@
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix white-text"></i>
-                                        <input type="text" id="loginForm-Email" class="form-control grey-text">
+                                        <input type="text" id="loginForm-Email" class="form-control grey-text" value="{{ old('email') }}" required>
                                         <label for="loginForm-Email" >Your email</label>
+                                        
+                                        @if ($errors->has('email'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @endif
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="loginForm-pass" class="form-control grey-text">
+                                        <input type="password" id="loginForm-pass" class="form-control grey-text" required>
                                         <label for="loginForm-pass">Your password</label>
+                                        
+                                        @if ($errors->has('password'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                        @endif
                                     </div>
                                     <div class="text-center">
-                                        <button class="btn blue-gradient btn-lg">Sign in</button>
+                                        <button type="submit" class="btn blue-gradient btn-lg">Sign in</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
                                             <a class="p-2 m-2 fa-lg tw-ic"><i class="fa fa-twitter white-text"></i></a>
@@ -89,7 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                             <!--/Form with header-->
                         </div>
                         <!--Grid column-->

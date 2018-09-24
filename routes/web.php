@@ -13,6 +13,13 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
+Route::group(['prefix' => 'merch'], function (){
+
+    Route::get('/', 'MapController@index')->name('index');
+    
+
+});
+
 // Route::middleware('auth')->group(function () {
     Route::get('/map', ['as' => 'map', 'uses' => 'MapController@index']);
 // });
