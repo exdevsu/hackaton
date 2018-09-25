@@ -2,9 +2,9 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
-Route::group(['prefix' => 'merch'], function () {
+Route::group(['prefix' => 'merch', 'middleware' => ['auth']], function () {
 
-    Route::get('/', 'MapController@index')->name('index');
+    Route::get('/', 'MapController@index')->name('merch.index');
 
     Route::get('/routes', function() {
         return 'Route lists here...';
@@ -28,11 +28,10 @@ Route::group(['prefix' => 'manager'], function () {
 Route::group(['prefix' => 'admin'], function () {
 
     Route::get('/', function () {
-        return 'Main page admin...';
+        return view('admin.index');
     });
 
 
 });
-
 
 Auth::routes();
