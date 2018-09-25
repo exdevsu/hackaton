@@ -2,7 +2,7 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
-Route::group(['prefix' => 'merch', 'middleware' => ['auth']], function () {
+Route::group(['prefix' => 'merch', 'middleware' => ['auth', 'isMerchUser']], function () {
 
     Route::get('/', 'MapController@index')->name('merch.index');
 
@@ -16,16 +16,7 @@ Route::group(['prefix' => 'merch', 'middleware' => ['auth']], function () {
 
 });
 
-
-Route::group(['prefix' => 'manager'], function () {
-
-    Route::get('/', function () {
-        return 'Main page manager...';
-    });
-
-});
-
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'isAdminUser']], function () {
 
     Route::get('/', function () {
         return view('admin.index');
