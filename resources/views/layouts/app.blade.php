@@ -15,14 +15,13 @@
     {{ HTML::style('css/style.css') }}
 </head>
 <body>
-    
+
     @yield('content')
 
     <footer>
         {{ HTML::script('js/jquery-3.3.1.min.js') }}
         {{ HTML::script('js/bootstrap.min.js') }}
         {{ HTML::script('js/mdb.min.js') }}
-        {{ HTML::script('js/popper.min.js') }}
         {{ HTML::script('js/modules/wow.js') }}
         {{ HTML::script('js/app.js') }}
     </footer>

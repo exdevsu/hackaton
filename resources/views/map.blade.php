@@ -34,12 +34,16 @@
 
                 <!--Google map-->
                 <div id="map-container-4"></div>
+                <div id="infoMarker" style="display: none"></div>
 
             </div>
         </main>
         <!--Main layout-->
     </header>
+    <!--Carousel Wrapper-->
 
     <!--Google Maps-->
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyDAaSWkt189Y1acVfd-OcSKrB3BTojvzKM"></script>
+    {{ HTML::script('js/popper.min.js') }}
+    {{ HTML::script('js/map.js') }}
 @endsection
