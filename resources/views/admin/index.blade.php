@@ -7,9 +7,8 @@
         <title>{{ Auth::check() ? "Logged In Admin" : "Logged Out"}}</title>
     </head>
     <body>
-        <form method="POST" action="{{ route('logout') }}">
-            <input type="submit" value="Exit">
-        </form>
+        <a href="#" onclick="return logoutForm.submit()">Exit</a>
+        <form name="logoutForm" method="POST" action="logout"> @csrf </form>
         
         <fieldset>
             <legend>Добавление мерча</legend>

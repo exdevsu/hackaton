@@ -73,7 +73,7 @@
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix white-text"></i>
-                                        <input type="text" id="loginForm-Email" class="form-control grey-text" value="{{ old('email') }}" required>
+                                        <input type="text" id="loginForm-Email" name="email" class="form-control grey-text" value="{{ old('email') }}" required>
                                         <label for="loginForm-Email" >Your email</label>
                                         
                                         @if ($errors->has('email'))
@@ -84,7 +84,7 @@
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="loginForm-pass" class="form-control grey-text" required>
+                                        <input type="password" id="loginForm-pass" name="password" class="form-control grey-text" required>
                                         <label for="loginForm-pass">Your password</label>
                                         
                                         @if ($errors->has('password'))

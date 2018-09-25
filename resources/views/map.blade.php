@@ -24,6 +24,10 @@
                 <li class="nav-item">
                     <a class="nav-link waves-effect"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span class="clearfix d-none d-sm-inline-block">Outlets</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect" onclick="return logoutForm.submit()"><span class="clearfix d-none d-sm-inline-block">Exit</span></a>
+                    <form name="logoutForm" method="POST" action="logout"> @csrf </form>
+                </li>
 
             </ul>
             <!--/Navbar links-->
