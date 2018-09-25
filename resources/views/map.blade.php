@@ -44,6 +44,5 @@
 
     <!--Google Maps-->
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyDAaSWkt189Y1acVfd-OcSKrB3BTojvzKM"></script>
-    {{ HTML::script('js/popper.min.js') }}
     {{ HTML::script('js/map.js') }}
 @endsection
