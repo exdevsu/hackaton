@@ -17,8 +17,16 @@ class UsersSeeder extends Seeder
                 'first_name'   => 'admin',
                 'patronymic'   => 'admin',
                 'email'        => 'admin@admin.ru',
-                'password'     => Hash::make('qwerty'),
+                'password'     => Hash::make('admin'),
                 'account_type' => 1,
+            ],
+            [
+                'second_name'  => 'manager',
+                'first_name'   => 'manager',
+                'patronymic'   => 'manager',
+                'email'        => 'manager@manager.ru',
+                'password'     => Hash::make('qwerty'),
+                'account_type' => 2,
             ],
             [
                 'second_name'  => 'merch',
@@ -26,7 +34,7 @@ class UsersSeeder extends Seeder
                 'patronymic'   => 'merch',
                 'email'        => 'merch@merch.ru',
                 'password'     => Hash::make('qwerty'),
-                'account_type' => 2,
+                'account_type' => 3,
             ],
         ]);
     }

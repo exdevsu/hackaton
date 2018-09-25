@@ -24,6 +24,9 @@ class RedirectIfAuthenticated
                     return redirect('/admin');
                 } break;
                 case 2: {
+                    return redirect('/manager');
+                } break;
+                case 3: {
                     return redirect('/merch');
                 } break;
             }

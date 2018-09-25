@@ -16,6 +16,9 @@ class ListAccountTypeSeeder extends Seeder
                 'description' => 'Администратор',
             ],
             [
+                'description' => 'Менеджер',
+            ],
+            [
                 'description' => 'Мерчендайзер',
             ],
         ]);

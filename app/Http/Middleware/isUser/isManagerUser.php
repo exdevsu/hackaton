@@ -5,7 +5,7 @@ namespace App\Http\Middleware\isUser;
 use Closure;
 use Auth;
 
-class isMerchUser
+class isManagerUser
 {
     /**
      * Handle an incoming request.
@@ -16,7 +16,7 @@ class isMerchUser
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->account_type !== 3) {
+        if (Auth::user()->account_type !== 2) {
             return back();
         }
 
