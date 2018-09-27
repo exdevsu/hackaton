@@ -5,6 +5,8 @@ Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
 Route::get('/map', 'MapController@index')->name('index');
 
+Route::get('/routelist', 'RouteListController@index')->name('routeList');
+
 Route::group(['prefix' => 'merch'], function () {
 
     // Route::get('/', 'MapController@index')->name('index');
