@@ -41,7 +41,7 @@
 
                             <li class="step-1">
                                 <!--Section Title -->
-                                <a href="#" class="circle-check" style="font-size: 8px;">
+                                <a href="#" class="circle-check">
                                     <i class="circle green fa fa-check" aria-hidden="true"></i>
                                 </a>
 

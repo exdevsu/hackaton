@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <!--Grid column-->
-                        <div class="col-md-12 col-xl-5 mb-4 center">
+                        <div class="col-md-6 col-xl-5 mb-4 center">
                             <!--Form with header-->
                             <form class="card animated fadeInUp" method="POST" action="{{ route('login') }}">
                                 @csrf
@@ -73,9 +73,9 @@
                                     <!--Body-->
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix white-text"></i>
-                                        <input type="text" id="loginForm-Email" name="email" class="form-control grey-text" value="{{ old('email') }}" required>
+                                        <input type="text" id="loginForm-Email" name="email" class="form-control white-text" value="{{ old('email') }}" required>
                                         <label for="loginForm-Email" >Your email</label>
-                                        
+
                                         @if ($errors->has('email'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -84,9 +84,9 @@
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-lock prefix white-text"></i>
-                                        <input type="password" id="loginForm-pass" name="password" class="form-control grey-text" required>
+                                        <input type="password" id="loginForm-pass" name="password" class="form-control white-text" required>
                                         <label for="loginForm-pass">Your password</label>
-                                        
+
                                         @if ($errors->has('password'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('password') }}</strong>
@@ -97,9 +97,7 @@
                                         <button type="submit" class="btn blue-gradient btn-lg">Sign in</button>
                                         <hr>
                                         <div class="inline-ul text-center d-flex justify-content-center">
-                                            <a class="p-2 m-2 fa-lg tw-ic"><i class="fa fa-twitter white-text"></i></a>
-                                            <a class="p-2 m-2 fa-lg li-ic"><i class="fa fa-linkedin white-text"> </i></a>
-                                            <a class="p-2 m-2 fa-lg ins-ic"><i class="fa fa-instagram white-text"> </i></a>
+                                            <a class="p-2 m-2 fa-lg tw-ic" href="https://github.com/exdevsu/hackaton" target="_blank"><i class="fa fa-github white-text"></i></a>
                                         </div>
                                     </div>
                                 </div>
