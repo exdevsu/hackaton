@@ -6,5 +6,3 @@ function getNaviaddress(container, naviaddress, version = '1.5') {
 
     return JSON.parse(xhr.responseText).result;
 }
-
-getNaviaddress('7495', '0001');

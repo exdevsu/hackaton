@@ -5,7 +5,6 @@
 @section('content')
 
     <header>
-
         {{ HTML::style('css/pages/map.css') }}
 
         @include('layouts.navbar')

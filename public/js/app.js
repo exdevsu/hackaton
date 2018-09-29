@@ -1,5 +1,5 @@
 new WOW();
 
-$('.jarallax').jarallax({
-    speed: 0.2
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
 });
