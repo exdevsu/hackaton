@@ -26,6 +26,6 @@
 
     <!--Google Maps-->
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyDAaSWkt189Y1acVfd-OcSKrB3BTojvzKM"></script>
-
+    {{ HTML::script('js/api/naviaddress.js') }}
     {{ HTML::script('js/pagesss/map.js') }}
 @endsection

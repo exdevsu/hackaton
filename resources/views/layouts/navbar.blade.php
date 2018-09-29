@@ -7,6 +7,9 @@
     <!--Navbar links-->
     <ul class="nav navbar-nav nav-flex-icons ml-auto">
 
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light white-text" href="/map"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span class="clearfix d-none d-sm-inline-block">Map</span></a>
+        </li>
         <!-- Dropdown -->
         <li class="nav-item notifications-nav">
             <a class="nav-link waves-effect waves-light white-text" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,7 +54,7 @@
 
 
                 <!-- Post title -->
-                <h3 class="font-weight-bold mb-3"><strong>ГАСТРОНОМ №1</strong><p style="font-size: 14px;"><i class="fa fa-location-arrow" aria-hidden="true"></i> [7495] 0001</p></h3>
+                <h3 class="font-weight-bold mb-3 text-truncate"><strong>ГАСТРОНОМ №1</strong><p style="font-size: 14px;"><i class="fa fa-location-arrow" aria-hidden="true"></i> [7495] 0001</p></h3>
 
                 <!-- Excerpt -->
                 <p class="dark-grey-text text-truncate">Гастроном №1 появился в 2008 году и мгновенно стал любимцем посетителей ГУМа. Объяснение простое: новый гастроном очень походил на легендарный советский, о чём свидетельствуют фотографии на стенах в торговом зале. Даже названия отделов перекочевали сюда из прошлого.</p>

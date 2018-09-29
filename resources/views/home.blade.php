@@ -26,6 +26,9 @@
                         <div class="md-form my-0">
                             <ul class="navbar-nav mr-auto h5-responsive animated fadeInDownBig">
                                 <li class="nav-item">
+                                    <a class="nav-link" href="/map">Map</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ route('home') }}">About</a>
                                 </li>
                                 <li class="nav-item">

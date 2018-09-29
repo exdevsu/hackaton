@@ -26,6 +26,7 @@
         {{ HTML::script('js/modules/wow.js') }}
         {{ HTML::script('js/modules/jarallax.js') }}
         {{ HTML::script('js/pagesss/routelist.js') }}
+        {{ HTML::script('js/pagesss/register.js') }}
         {{ HTML::script('js/app.js') }}
     </footer>
 </body>

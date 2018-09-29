@@ -50,8 +50,23 @@
 
 @media(min-width: 992px) {
     img.routelist {
-        width: 250px;
+        width: 250px !important;
     }
 }
 
-@media(max-width: 992px)
+
+    .modal-dialog {
+        max-width: 100%;
+        position: fixed;
+        margin: 0;
+        bottom: 0;
+    }
+
+    img.routelist {
+        width: 150px;
+    }
+
+    .modal.modal-content-clickable {
+        top: auto;
+        bottom: auto;
+    }
