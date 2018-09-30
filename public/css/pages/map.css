@@ -29,11 +29,6 @@
     overflow-y: scroll;
 }
 
-.modal-body.checkin {
-    max-height: 500px;
-    overflow-y: scroll;
-}
-
 @media(min-width: 992px) {
     img.routelist {
         width: 250px !important;
@@ -42,7 +37,6 @@
 
 .modal-dialog.checkin {
     max-width: 100%;
-    position: fixed;
     margin: 0;
     top: 0;
 }
@@ -62,4 +56,11 @@ img.routelist {
 .modal.modal-content-clickable {
     top: auto;
     bottom: auto;
+}
+
+.file-field.big .file-path-wrapper {
+  height: 3.2rem;
+}
+  .file-field.big .file-path-wrapper .file-path {
+    height: 3rem;
 }

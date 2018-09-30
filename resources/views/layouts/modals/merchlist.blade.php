@@ -41,7 +41,7 @@
                                     <a data-toggle="modal" data-target="#basicExampleModalMerchReports">
                                         <i class="fa fa-check green-text fa-lg" aria-hidden="true"></i>
                                     </a>
-                                </a>
+                                </span>
                                 <a class="ml-2" data-toggle="tooltip" data-placement="top" title="Show Route List"><i class="fa fa-plane amber-text fa-lg" aria-hidden="true"></i></a>
                             </td>
                         </tr>

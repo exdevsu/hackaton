@@ -2,6 +2,7 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
+Route::get('/test', 'PointController@index');
 
 Route::get('/map', 'MapController@index')->name('index');
 

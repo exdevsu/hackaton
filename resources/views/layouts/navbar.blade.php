@@ -38,3 +38,4 @@
 @include('layouts.modals.merchlist')
 @include('layouts.modals.markers')
 @include('layouts.modals.reports')
+@include('layouts.modals.checkin')

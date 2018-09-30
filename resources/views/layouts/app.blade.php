@@ -22,9 +22,10 @@
         {{ HTML::script('js/jquery-3.3.1.min.js') }}
         {{ HTML::script('js/popper.min.js') }}
         {{ HTML::script('js/bootstrap.min.js') }}
-        {{ HTML::script('js/mdb.min.js') }}
         {{ HTML::script('js/modules/wow.js') }}
         {{ HTML::script('js/modules/jarallax.js') }}
+        {{ HTML::script('js/mdb.min.js') }}
+        {{ HTML::script('js/modules/file-input.js') }}
         {{ HTML::script('js/pagesss/routelist.js') }}
         {{ HTML::script('js/pagesss/register.js') }}
         {{ HTML::script('js/app.js') }}

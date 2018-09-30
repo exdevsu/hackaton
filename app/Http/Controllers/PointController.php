@@ -2,84 +2,45 @@
 
 namespace App\Http\Controllers;
 
-use App\PointModel;
 use Illuminate\Http\Request;
+use App\Point;
+use App\Http\Api\NaviaddressApi as Navi;
 
 class PointController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
+        // /*О каком ip ищем информацию*/
+        // $ip = '93.159.238.226';
         //
-    }
+        // /*получаем информацию о ip в виде xml-файла от сервиса ipgeobase.ru*/
+        // $result = file_get_contents("http://ipgeobase.ru:7020/geo?ip=".$ip);
+        //
+        // header('Content-Type: text/html; charset=utf-8');
+        //
+        // /*Формируем DOM-структуру из полученного xml*/
+        // $xml = new \SimpleXMLElement($result);
+        // /*Выводим полученную информацию*/
+        // echo "Информация об IP ".$xml->ip->attributes[0]."<br>";
+        // echo "Сеть: ".$xml->ip->inetnum."<br>";
+        // echo "Страна: ".$xml->ip->country."<br>";
+        // echo "Город: ".$xml->ip->city."<br>";
+        // echo "Область: ".$xml->ip->region."<br>";
+        // echo "Округ: ".$xml->ip->district."<br>";
+        // echo "Широта: ".$xml->ip->lat."<br>";
+        // echo "Долгота: ".$xml->ip->lng."<br>";
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
+        // $marker = Navi::createNaviaddress(55.6184941, 37.3158471, session('token'));
         //
-    }
+        // if (!$marker) {
+        //     return false;
+        // }
+        //
+        // $point = new Point;
+        // $point->container = $marker['result']['container'];
+        // $point->naviaddress = $marker['result']['naviaddress'];
+        // $point->save();
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\PointModel  $pointModel
-     * @return \Illuminate\Http\Response
-     */
-    public function show(PointModel $pointModel)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\PointModel  $pointModel
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(PointModel $pointModel)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\PointModel  $pointModel
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, PointModel $pointModel)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\PointModel  $pointModel
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(PointModel $pointModel)
-    {
-        //
+        return view('test');
     }
 }
